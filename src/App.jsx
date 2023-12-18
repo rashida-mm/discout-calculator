@@ -13,8 +13,13 @@ function App() {
 console.log(amount,discount);
 
 const calc =(e)=>{
-  const output = amount - (amount * discount) / 100;
+  if (isNaN(amount) || isNaN(discount)) {
+    alert('Please enter valid numbers for amount and discount');
+  } 
+  else{
+    const output = amount - (amount * discount) / 100;
   setTotal(output)
+  }
 }
 
 const reset = (e)=>{
@@ -29,7 +34,7 @@ setDiscount(0)
           <h1>Discount Calculator</h1>
           </div>
       <div className="container col-4">
-      <img src="https://d2kh7o38xye1vj.cloudfront.net/wp-content/uploads/2023/07/discountMainBanner.png" alt="" />
+      <img src="https://cdn.dribbble.com/users/2004171/screenshots/5646149/dribbble_canvas__calculator_.gif" alt="" />
       </div>
       <div className="container col-4 ">
       <div className="form">
