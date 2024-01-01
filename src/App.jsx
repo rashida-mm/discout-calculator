@@ -29,14 +29,14 @@ setDiscount(0)
 }
   return (
     <div className="App">
-     <div className="row">
-     <div className="header">
+<div className='row'>
+    <div className="header">
           <h1>Discount Calculator</h1>
           </div>
-      <div className="container col-4">
+      <div className="container-fluid col px-5">
       <img src="https://cdn.dribbble.com/users/2004171/screenshots/5646149/dribbble_canvas__calculator_.gif" alt="" />
       </div>
-      <div className="container col-4 ">
+      <div className="container-fluid entry col px-5">
       <div className="form">
               <form>
                 <div className="input">
@@ -53,7 +53,7 @@ setDiscount(0)
               <h2> Total Amount : &#8377;{total} </h2>
             </div>
       </div>
-     </div>
+</div>
     </div>
   );
 }
